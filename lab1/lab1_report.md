@@ -46,8 +46,6 @@ Hello from Docker!
 This message shows that your installation appears to be working correctly.
 ```
 
-Образа `hello-world` на компьютере не было, поэтому Docker сначала скачал его с Docker Hub, а потом запустил контейнер. Сообщение «Hello from Docker!» означает, что установка работает.
-
 ![Запуск hello-world](screenshots/02-hello-world.png)
 
 Список скачанных образов:
@@ -70,8 +68,6 @@ python:3.12-slim                 57cd7c3a7a27        205MB        45.6MB
 ```bash
 docker ps
 ```
-
-Вывелся только заголовок таблицы — работающих контейнеров нет. Контейнер `hello-world` напечатал сообщение и сразу закончил работу, поэтому в этом списке его нет.
 
 ![Работающие контейнеры](screenshots/04-docker-ps.png)
 
