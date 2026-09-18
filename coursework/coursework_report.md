@@ -26,8 +26,6 @@ Date of finished: 18.09.2026
 
 ### 1. Установка
 
-MkDocs и тема Material установлены через менеджер пакетов Python:
-
 ```bash
 pip3 install mkdocs mkdocs-material
 ```
@@ -50,8 +48,6 @@ Version: 9.7.7
 ![Версии установленных пакетов](screenshots/01-versions.png)
 
 ### 2. Структура проекта
-
-Проект создан в папке `coursework` репозитория. Структура получилась такая:
 
 ```bash
 find . -type f -not -path "./site/*" | sort
