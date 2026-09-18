@@ -1,0 +1,76 @@
+site_name: Анастасия Преснякова
+site_description: Персональный сайт продуктового менеджера в сфере IoT
+site_author: Преснякова Анастасия Алексеевна
+site_url: https://naspresn.github.io/devops-lab-presnyakova/
+
+theme:
+  name: material
+  language: ru
+  logo: images/logo.png
+  favicon: images/favicon.png
+  font:
+    text: Manrope
+    code: JetBrains Mono
+  palette:
+    - scheme: default
+      primary: pink
+      accent: pink
+      toggle:
+        icon: material/weather-night
+        name: Тёмная тема
+    - scheme: slate
+      primary: pink
+      accent: pink
+      toggle:
+        icon: material/weather-sunny
+        name: Светлая тема
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.instant
+    - search.highlight
+    - search.share
+    - content.code.copy
+
+nav:
+  - Главная: index.md
+  - О себе: about.md
+  - Проекты: projects.md
+  - Резюме: resume.md
+  - Достижения: achievements.md
+  - Контакты: contacts.md
+
+extra_css:
+  - stylesheets/extra.css
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+plugins:
+  - search:
+      lang: ru
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/naspresn
+      name: GitHub
+    - icon: fontawesome/brands/telegram
+      link: https://t.me/npresn
+      name: Telegram
+    - icon: material/email
+      link: mailto:naspresn@gmail.com
+      name: Почта
+
+copyright: © 2026 Анастасия Преснякова

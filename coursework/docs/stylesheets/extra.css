@@ -1,0 +1,230 @@
+/* ---- Малиновая палитра ---- */
+:root {
+  --rasp-900: #7d0d3b;
+  --rasp-700: #a8124f;
+  --rasp-500: #d81b60;
+  --rasp-300: #f06292;
+  --rasp-100: #fce4ec;
+}
+
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color:        var(--rasp-700);
+  --md-primary-fg-color--light: var(--rasp-500);
+  --md-primary-fg-color--dark:  var(--rasp-900);
+  --md-accent-fg-color:         var(--rasp-500);
+  --md-typeset-a-color:         var(--rasp-700);
+  --md-default-bg-color:        #ffffff;
+}
+
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color:        var(--rasp-500);
+  --md-accent-fg-color:         var(--rasp-300);
+  --md-typeset-a-color:         var(--rasp-300);
+}
+
+/* ---- Типографика ---- */
+.md-typeset h1 {
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: var(--md-default-fg-color);
+}
+
+.md-typeset h2 {
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  margin-top: 2.2em;
+  padding-bottom: 0.3em;
+  border-bottom: 2px solid var(--rasp-100);
+}
+
+[data-md-color-scheme="slate"] .md-typeset h2 {
+  border-bottom-color: rgba(240, 98, 146, 0.25);
+}
+
+/* ---- Шапка главной страницы ---- */
+.hero {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+  margin: -1rem 0 3rem;
+  padding: 2.5rem;
+  border-radius: 1.25rem;
+  background: linear-gradient(135deg, var(--rasp-100) 0%, #ffffff 55%, #fff5f8 100%);
+  border: 1px solid rgba(216, 27, 96, 0.16);
+  box-shadow: 0 18px 40px -28px rgba(125, 13, 59, 0.55);
+}
+
+[data-md-color-scheme="slate"] .hero {
+  background: linear-gradient(135deg, rgba(216, 27, 96, 0.22) 0%, transparent 60%);
+  border-color: rgba(240, 98, 146, 0.28);
+}
+
+.hero-photo {
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  border: 4px solid #fff;
+  box-shadow: 0 10px 30px -10px rgba(125, 13, 59, 0.5);
+}
+
+.hero-text {
+  flex: 1 1 320px;
+}
+
+.md-typeset .hero-text h1 {
+  margin: 0 0 0.35em;
+  font-size: 2.4rem;
+  line-height: 1.1;
+  background: linear-gradient(90deg, var(--rasp-900), var(--rasp-500));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.hero-role {
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--rasp-700);
+  margin: 0 0 0.9rem;
+}
+
+[data-md-color-scheme="slate"] .hero-role {
+  color: var(--rasp-300);
+}
+
+.md-typeset .hero-text p {
+  margin-bottom: 1rem;
+}
+
+/* ---- Карточки ---- */
+.md-typeset .grid.cards > ul > li {
+  border-radius: 1rem;
+  border: 1px solid rgba(216, 27, 96, 0.18);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.md-typeset .grid.cards > ul > li:hover {
+  transform: translateY(-4px);
+  border-color: var(--rasp-500);
+  box-shadow: 0 16px 34px -22px rgba(125, 13, 59, 0.65);
+}
+
+.md-typeset .grid.cards > ul > li > hr {
+  margin: 0.8em 0;
+  border-color: rgba(216, 27, 96, 0.22);
+}
+
+/* ---- Теги технологий ---- */
+.tags {
+  margin-top: 0.8em;
+}
+
+.tag {
+  display: inline-block;
+  margin: 0 0.35em 0.45em 0;
+  padding: 0.18em 0.7em;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  background: var(--rasp-100);
+  color: var(--rasp-900);
+}
+
+[data-md-color-scheme="slate"] .tag {
+  background: rgba(240, 98, 146, 0.18);
+  color: var(--rasp-300);
+}
+
+/* ---- Таблицы ---- */
+.md-typeset table:not([class]) th {
+  background: var(--rasp-700);
+  color: #fff;
+  font-weight: 600;
+}
+
+.md-typeset table:not([class]) {
+  border-radius: 0.75rem;
+  overflow: hidden;
+  box-shadow: 0 6px 20px -16px rgba(125, 13, 59, 0.6);
+}
+
+/* ---- Кнопки ---- */
+.md-typeset .md-button {
+  border-radius: 999px;
+  font-weight: 600;
+  padding: 0.5em 1.4em;
+}
+
+.md-typeset .md-button--primary {
+  background: var(--rasp-700);
+  border-color: var(--rasp-700);
+}
+
+/* ---- Цитата ---- */
+.md-typeset blockquote {
+  border-left: 4px solid var(--rasp-500);
+  background: rgba(252, 228, 236, 0.5);
+  border-radius: 0 0.5rem 0.5rem 0;
+  padding: 0.8em 1.2em;
+  color: var(--md-default-fg-color);
+  font-style: italic;
+}
+
+[data-md-color-scheme="slate"] .md-typeset blockquote {
+  background: rgba(240, 98, 146, 0.1);
+}
+
+/* ---- Узкие экраны ---- */
+@media screen and (max-width: 600px) {
+  .hero {
+    padding: 1.6rem;
+    gap: 1.4rem;
+    justify-content: center;
+    text-align: center;
+  }
+  .hero-photo {
+    width: 140px;
+    height: 140px;
+  }
+  .md-typeset .hero-text h1 {
+    font-size: 1.9rem;
+  }
+}
+
+/* ---- Раскладка карточек ---- */
+/* В теме Material сеткой является сам блок .grid, список внутри выводится сквозным */
+.md-typeset .grid.cards {
+  grid-gap: 1.3rem;
+}
+
+@media screen and (min-width: 60em) {
+  .md-typeset .grid.cards.cards-1 {
+    grid-template-columns: minmax(0, 1fr) !important;
+  }
+  .md-typeset .grid.cards.cards-1 > ul > li {
+    padding: 1.6rem 2rem;
+  }
+  .md-typeset .grid.cards.cards-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+    grid-gap: 1rem;
+  }
+  .md-typeset .grid.cards.cards-4 > ul > li {
+    padding: 1.1rem 1.2rem;
+    font-size: 0.74rem;
+  }
+}
+
+/* Шире поле контента */
+.md-grid {
+  max-width: 68rem;
+}
+
+/* Убрать якорь ¶ у имени в шапке главной */
+.hero-text .headerlink {
+  display: none;
+}

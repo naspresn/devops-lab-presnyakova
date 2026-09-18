@@ -38,3 +38,4 @@ venv/
 logs/
 tmp/
 *.tmp
+site/
