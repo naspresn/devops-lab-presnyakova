@@ -184,7 +184,15 @@ INFO - Documentation built in 0.14 seconds
 
 ![Сборка сайта](screenshots/18-mkdocs-build.png)
 
+### 7. Публикация на GitHub Pages
+
+Сайт опубликован средствами GitHub Pages.
+
+```bash
+mkdocs gh-deploy
+```
+Адрес сайта: [naspresn.github.io/devops-lab-presnyakova](https://naspresn.github.io/devops-lab-presnyakova/)
 
 ## Выводы
 
-Создан персональный сайт из шести страниц на MkDocs с темой Material. Содержание написано на Markdown, оформление настроено через конфигурацию темы и собственный файл CSS, работа проверена локально и сайт собран в статические файлы.
+Создан персональный сайт из шести страниц на MkDocs с темой Material. Содержание написано на Markdown, оформление настроено через конфигурацию темы и собственный файл CSS, работа проверена локально, сайт собран в статические файлы, опубликован на GitHub Pages и доступен по постоянному адресу.
